@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "react-props01/",
+  base: "/react-props01/",
   plugins: [react()]
 })

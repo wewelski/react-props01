@@ -1,3 +1,5 @@
+import "./Card.css"
+
 const styles = {
   card: {
     display: "flex",
@@ -9,12 +11,10 @@ const styles = {
 
 function Card({title, subtitle, description, image}) {
   return <article style={styles.card}>
-    <div>
-      <img src={image} />
+    <div className="container">
+      <img src={image} className="redpanda"/>
       <h2>{title}</h2>
       <h3>{subtitle}</h3>
-    </div>
-    <div>
       <p>{description}</p>
     </div>
   </article>
